@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCP - Database</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pictures/scp_icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+<!---    <div class="title_background">
+        <h1 class="title">SCP: Foundation</h1>
+    </div>
+    <hr class="line">
+    
+</body>
+<style>
+body{
+    background-image: url("pictures/scp_background.png");
+}
+/*.title_background{
+    top: 100%;
+    background: rgb(16,16,17);
+    background: linear-gradient(90deg, rgba(16,16,17,1) 40%, rgba(100,102,102,1) 85%);  hex: #101011, #646666
+    background: linear-gradient(gray, black);
+}*/
+h1.title{
+    color: white;
+    font-size: 4em;
+    vertical-align: top;
+}
+hr.line{
+    color:white;
+}-->
+
+<div class='introduction'>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+   <img class='Intro_pic' src="pictures/scp_icon.png" height="256px" width="256px"/>
+    <br />
+    <!--<h2 class='Intro_text'><i>Welcome Back: Agent 942...</i></h2>-->
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div> 
+</div>
+
+<div class="container">
+    <div class="image">
+      <a href="http://www.scpwiki.com/" target="_blank">
+      <img src="pictures/scp_logo1.png">
+      </a>
+    </div>
+    <div class="main_title">
+      <h1><b>Foundation</b></h1>
+    </div>
+  </div>
+<hr class="line">
+<h2 class="title2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b><u>Summary/Mission Statment:</u></b></h2>
+<center>
+<div class="description_box">
+  <div class="text_description">
+  <b>
+  The SCP Foundation is a secret organization operating clandestine and worldwide, 
+  the Foundation operates beyond jurisdiction, empowered and entrusted by every major 
+  national government with the task of containing anomalous objects, entities, and phenomena. 
+  These anomalies pose a significant threat to global security by threatening either physical or 
+  psychological harm.
+<br />
+<br />
+  The Foundation operates to maintain normalcy, so that the worldwide civilian population can live 
+  and go on with their daily lives without fear, mistrust, or doubt in their personal beliefs, and 
+  to maintain human independence from extraterrestrial, extradimensional, and other extranormal influence.
+  <!--secret organization entrusted by governments around the globe to contain 
+  and study anomalous individuals, entities, locations, objects, and phenomena operating outside the 
+  bounds of natural law (referred to as "SCP objects", or familiarly as "SCPs"). 
+  If left uncontained, the objects would pose a direct threat to human life and humanity's perceptions of reality and normalcy.-->
+  </b>
+  </div>
+</div>
+</center>
+
+
+
+</body>
+<style>
+/*fade in and out introduction ccs screen*/
+.introduction {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient( black, gray); /*gray and black or black or grey?*/
+  overflow: hidden;
+}
+img.Intro_pic{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+h2.Intro_text{
+    font-size: 2em;
+    top: 50%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+} 
+/*Terminal text effect*/
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+/*body {
+  background: #111;
+}*/
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family: Khula;
+  font-size: 3.5em;
+  text-align: center;
+  height: 200px;
+  width: 800px;
+  display: block;
+  position: absolute;
+  color: white;
+  top: 400px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
+/*Actual website*/
+
+/*Background */
+body{
+    background-image: url("pictures/scp_background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*height: fit-content;
+    width: fit-content;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Title Top/Section*/
+.container {
+    display: flex;
+    align-items: top;
+    justify-content: left;
+  }
+  img {
+    max-width: 100%
+  }
+  .image {
+    flex-basis: 20%;
+  }
+  .main_title{
+    font-size: 3.1em;
+    padding-left: 20px;
+    font-family: BauhausLTDemi, 'Nanum Gothic', Arial, sans-serif;
+    top: -72px;  
+    position: relative;
+    color: white;
+}
+hr.line{
+    color:black;
+    top: -120px;
+    position: relative;
+    border-top: 10px solid white;
+    border-radius: 10px;
+}
+
+/*Content*/
+h2.title2{
+  font-family: BauhausLTDemi, 'Nanum Gothic', Arial, sans-serif;
+  position: relative;
+  color: red;
+  top: -130px;
+  font-size: 2em;
+  text-shadow: 2px 2px 0px black;
+}
+
+.description_box{
+  background: linear-gradient(white, grey);
+  position: relative;
+  width: 700px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px solid black;
+  border-radius: 5px;
+  top: -130px;
+}
+.text_description{
+  font-family: BauhausLTDemi, 'Nanum Gothic', Arial, sans-serif;
+  font-size: 14.5px;
+  /*font-family: verdana, arial, helvetica, sans-serif;*/
+}
+</style>
+<script>
+alert("Warning: All Information Presented is Highly Classified with Given Access to Only Those with Level 3 Clearence or Higher.");
+//var elem = document.querySelector('.introduction');
+//elem.style.overflow = "hidden";
+
+setTimeout(function() {
+  //Terminal text effect
+
+  // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Verifying Identification...', 'Logging in..', 'Welcome: Agent 923'], 'text',['white','white','white']);
+
+  function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000) //1000
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -2; //-1
+        letterCount = x + 2; //+= x;
+        waiting = false;
+      }, 1000) //1000
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+  }
+	//After 2000 milliseconds, fade out the overlay. The animation duration is 1000 ms.
+  setTimeout(() => { $(".introduction").fadeOut(1000); }, 1500); //12500
+  //$(".introduction").fadeOut(1000); //Miliseconds for animation duration.
+}, 2500); //Miliseconds until it fades out ;13500ms last time
+    
+</script>
+<noscript>
+   Unfortunatly, your browser does not support javascript for the website.
+   If You Are Seeing This Message
+   This Means That Your Current Browser Doesn't Support Javascipt, Therefore It Is Recommended That You Switch To: 
+   Firefox, Google Chrome, Safari (Apple Browser), Opera, and or Internet Explorer.
+</noscript>
