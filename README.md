@@ -1,1 +1,1 @@
-# CS_Website_Project
+# Computer Science Website Project
